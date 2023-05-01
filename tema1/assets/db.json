@@ -1,0 +1,14 @@
+{
+    "feedbacks": {
+        "feedbacks": [
+            {
+                "id_feedback": 1,
+                "id_product": 1,
+                "id_user": 1,
+                "title": "good",
+                "message": "ok",
+                "created_date": "12-12-2023"
+            }
+        ]
+    }
+}

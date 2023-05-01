@@ -1,0 +1,36 @@
+DROP TABLE HMS_USERS;
+
+CREATE TABLE HMS_USERS (
+    ID_USER INTEGER PRIMARY KEY,
+    USERNAME VARCHAR2(50) UNIQUE NOT NULL,
+    EMAIL VARCHAR2(100) UNIQUE NOT NULL,
+    FIRST_NAME VARCHAR2(50) NOT NULL,
+    LAST_NAME VARCHAR2(50) NOT NULL,
+    ADDRESS VARCHAR2(200) NOT NULL,
+    CITY VARCHAR2(50) NOT NULL,
+    ZIPCODE VARCHAR2(10) NOT NULL,
+    COUNTRY VARCHAR2(50) NOT NULL,
+    PHONE VARCHAR2(20) NOT NULL,
+    CREATED_AT TIMESTAMP DEFAULT SYSTIMESTAMP
+);
+
+INSERT INTO HMS_USERS (ID_USER, USERNAME, EMAIL, FIRST_NAME, LAST_NAME, ADDRESS, CITY, ZIPCODE, COUNTRY, PHONE) 
+VALUES (1, 'ana_popescu', 'ana.popescu@example.com', 'Ana', 'Popescu', 'Strada Victoriei, Nr. 10', 'București', '010121', 'România', '+40-731-123-456');
+
+INSERT INTO HMS_USERS (ID_USER, USERNAME, EMAIL, FIRST_NAME, LAST_NAME, ADDRESS, CITY, ZIPCODE, COUNTRY, PHONE) 
+VALUES (2, 'mihai_ionescu', 'mihai.ionescu@example.com', 'Mihai', 'Ionescu', 'Strada Avram Iancu, Nr. 15', 'Cluj-Napoca', '400000', 'România', '+40-751-234-567');
+
+INSERT INTO HMS_USERS (ID_USER, USERNAME, EMAIL, FIRST_NAME, LAST_NAME, ADDRESS, CITY, ZIPCODE, COUNTRY, PHONE) 
+VALUES (3, 'maria_popa', 'maria.popa@example.com', 'Maria', 'Popa', 'Bulevardul Unirii, Nr. 20', 'Iași', '700000', 'România', '+40-741-345-678');
+
+INSERT INTO HMS_USERS (ID_USER, USERNAME, EMAIL, FIRST_NAME, LAST_NAME, ADDRESS, CITY, ZIPCODE, COUNTRY, PHONE) 
+VALUES (4, 'ion_stoica', 'ion.stoica@example.com', 'Ion', 'Stoica', 'Strada Gheorghe Doja, Nr. 25', 'Timișoara', '300000', 'România', '+40-731-456-789');
+
+INSERT INTO HMS_USERS (ID_USER, USERNAME, EMAIL, FIRST_NAME, LAST_NAME, ADDRESS, CITY, ZIPCODE, COUNTRY, PHONE) 
+VALUES (5, 'andreea_munteanu', 'andreea.munteanu@example.com', 'Andreea', 'Munteanu', 'Strada Tudor Vladimirescu, Nr. 30', 'Brașov', '500000', 'România', '+40-741-567-890');
+
+SELECT * FROM HMS_USERS;
+
+
+
+commit;
