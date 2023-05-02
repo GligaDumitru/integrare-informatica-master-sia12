@@ -51,7 +51,8 @@ with json as
 (select JSON_QUERY(get_external_data('EXTERN_DIR_FILE_JSON','HMS_ORDER_ITEMS.json'),
     '$.items') doc from dual)
 SELECT * FROM  JSON_TABLE( (select doc from json) , '$[*]'  
-            COLUMNS ( id_order   PATH '$.id_order'
+            COLUMNS ( id_order_item  PATH '$.id_order_item'
+                    , id_order   PATH '$.id_order'
                     , id_product PATH '$.id_product'
                     , quantity PATH '$.quantity'
                     )  

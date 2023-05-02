@@ -1,16 +1,19 @@
 {
     "items": [
         {
+            "id_order_item": 1,
             "id_order": 1,
             "id_product": 1,
             "quantity": 1
         },
         {
+            "id_order_item": 2,
             "id_order": 1,
             "id_product": 2,
             "quantity": 1
         },
         {
+            "id_order_item": 3,
             "id_order": 1,
             "id_product": 3,
             "quantity": 2

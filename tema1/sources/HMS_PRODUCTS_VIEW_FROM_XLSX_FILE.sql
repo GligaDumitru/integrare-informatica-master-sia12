@@ -20,3 +20,12 @@ from TABLE(
 SELECT * FROM HMS_PRODUCTS_VIEW;
 
 commit;
+
+CREATE OR REPLACE VIEW OLAP_FACTS_SALES_AMOUNT AS
+SELECT OrderView.id_customer, OrderView.order_date, ProductView."id_product", SUM(itemsView.quantity * ProductView."price") as SALES_AMOUNT
+FROM HMS_ORDERS_VIEW OrderView 
+  INNER JOIN HMS_ORDER_ITEMS_VIEW itemsView
+    ON OrderView.id_order = itemsView.id_order 
+  INNER JOIN HMS_PRODUCTS_VIEW ProductView 
+    ON itemsView.id_product = ProductView."id_product" 
+  GROUP BY OrderView.id_customer, ProductView."id_product", OrderView.order_date;
