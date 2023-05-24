@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cities>
+  <city>
+    <ID_CITY>1001</ID_CITY>
+    <NAME>București</NAME>
+  </city>
+  <city>
+    <ID_CITY>1002</ID_CITY>
+    <NAME>Cluj-Napoca</NAME>
+  </city>
+  <city>
+    <ID_CITY>1003</ID_CITY>
+    <NAME>Iași</NAME>
+  </city>
+  <city>
+    <ID_CITY>1004</ID_CITY>
+    <NAME>Timișoara</NAME>
+  </city>
+  <city>
+    <ID_CITY>1005</ID_CITY>
+    <NAME>Brașov</NAME>
+  </city>
+</cities>
+
+București, Cluj-Napoca, Iași, Timișoara, Brașov

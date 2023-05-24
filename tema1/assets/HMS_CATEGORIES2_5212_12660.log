@@ -1,0 +1,64 @@
+
+
+ LOG file opened at 05/24/23 01:21:19
+
+Total Number of Files=1
+
+Data File: HMS_CATEGORIES.csv
+
+Log File: HMS_CATEGORIES2_5212_12660.log
+
+
+
+ LOG file opened at 05/24/23 01:21:19
+
+Bad File: HMS_CATEGORIES2_5212_12660.bad
+
+Field Definitions for table HMS_CATEGORIES2
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    ID_CATEGORY                     CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    NAME                            CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    DESCRIPTION                     CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+
+
+ LOG file opened at 05/24/23 01:21:35
+
+Total Number of Files=1
+
+Data File: HMS_CATEGORIES.csv
+
+Log File: HMS_CATEGORIES2_5212_12660.log
+
+
+
+ LOG file opened at 05/24/23 01:21:35
+
+Bad File: HMS_CATEGORIES2_5212_12660.bad
+
+Field Definitions for table HMS_CATEGORIES2
+  Record format DELIMITED BY NEWLINE
+  Data in file has same endianness as the platform
+  Rows with all null fields are accepted
+
+  Fields in Data Source: 
+
+    ID_CATEGORY                     CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    NAME                            CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader
+    DESCRIPTION                     CHAR (255)
+      Terminated by ","
+      Trim whitespace same as SQL Loader

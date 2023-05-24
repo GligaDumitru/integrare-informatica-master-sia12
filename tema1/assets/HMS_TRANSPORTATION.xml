@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <transportation>
   <company>
-    <ID_COMPANY>1234</ID_COMPANY>
+    <ID_COMPANY>1</ID_COMPANY>
     <NAME>CARGUS</NAME>
     <ADDRESS>Str. Ploiesti, Nr.28</ADDRESS>
     <EMAIL>cargus@contact.com</EMAIL>
     <PHONE>0759123123</PHONE>
   </company>
   <company>
-    <ID_COMPANY>2345</ID_COMPANY>
+    <ID_COMPANY>2</ID_COMPANY>
     <NAME>FAN CURIER</NAME>
     <ADDRESS>Str. Ploiesti, Nr.28</ADDRESS>
     <EMAIL>fancurier@contact.com</EMAIL>

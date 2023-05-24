@@ -25,3 +25,23 @@ REJECT LIMIT UNLIMITED;
 SELECT * FROM HMS_CATEGORIES;
 
 commit;
+
+
+
+
+DECLARE
+ PRAGMA AUTONOMOUS_TRANSACTION;
+BEGIN
+ ORDS.ENABLE_SCHEMA(p_enabled => TRUE,
+ p_schema => 'DEVELOPER',
+ p_url_mapping_type => 'BASE_PATH',
+ p_url_mapping_pattern => 'developer',
+ p_auto_rest_auth => FALSE);
+ commit;
+END;
+/
+
+
+
+-- http://localhost:8080/ords/developer/hms_categories2/
+-- http://localhost:8080/ords/developer/customers

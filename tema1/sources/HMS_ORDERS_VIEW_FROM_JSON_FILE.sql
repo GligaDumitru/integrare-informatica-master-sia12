@@ -32,7 +32,7 @@ end;
 DROP DIRECTORY extern_dir_file_json;
 CREATE OR REPLACE DIRECTORY extern_dir_file_json AS 'D:\facultate\integrare-informatie\SIA12\tema1\assets';
 
-CREATE OR REPLACE VIEW HMS_ORDERS_VIEW AS
+CREATE OR REPLACE VI EW HMS_ORDERS_VIEW AS
 with json as
 (select JSON_QUERY(get_external_data('EXTERN_DIR_FILE_JSON','HMS_ORDERS.json'),
     '$.orders') doc from dual)

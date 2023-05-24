@@ -1,3 +1,4 @@
+-- "C:\Program Files\MongoDB\Server\6.0\bin\mongod.exe" --dbpath="c:\data\db"
 grant execute on utl_http to sys;
 grant execute on dbms_lock to sys;
 
@@ -23,9 +24,9 @@ with json as
 SELECT *
 FROM  JSON_TABLE( (select doc from json) , '$[*]'  
             COLUMNS ( id_feedback   PATH '$.id_feedback'  
-                    , id_product PATH '$.id_product'  
-                    , id_user PATH '$.id_user'  
-                    , title    PATH '$.title' 
+                    , id_order_item PATH '$.id_order_item'  
+                    , id_customer PATH '$.id_customer'  
+                    , rating    PATH '$.rating' 
                     , message    PATH '$.message'  
                     , created_date     PATH '$.created_date'  
                     )  
@@ -74,9 +75,9 @@ with json as
     '$.feedbacks.feedbacks') doc from dual)
 SELECT * FROM  JSON_TABLE( (select doc from json) , '$[*]'  
             COLUMNS ( id_feedback   PATH '$.id_feedback'
-                    , id_product PATH '$.id_product'
-                    , id_user PATH '$.id_user'
-                    , title     PATH '$.title'
+                    , id_order_item PATH '$.id_order_item'
+                    , id_customer PATH '$.id_customer'
+                    , rating     PATH '$.rating'
                     , message     PATH '$.message'
                     , created_date     PATH '$.created_date'
                     )  
